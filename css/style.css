@@ -1,0 +1,127 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    color: #000000;
+    background-color: rgb(239, 235, 235);
+    font: 25px/2 'Oswald', sans-serif;
+}
+
+.list {
+    width: 100%;
+}
+
+.list__field {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 15px 15px 15px 15px rgba(188, 182, 170, 0.26);
+}
+
+.list__field--biggerGap {
+    margin: 15px 0 0 0;
+}
+
+.list__item {
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    padding: 5px;
+    list-style-type: none;
+    min-height: 80px;
+    box-shadow: 15px 15px 15px 15px rgba(188, 182, 170, 0.26);;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__item--row {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 11px;
+    align-content: center;
+}
+
+.button_done_unchecked {
+    background-color: rgb(39, 175, 55);
+    border: none;
+    transition: transform 1s ease-in;
+    color: white;
+}
+
+.button_done_unchecked:hover {
+    background-color: rgb(83, 207, 97);
+    transition: 0.3s;
+    transform: rotate(360deg);
+}
+
+.button__done {
+    background-size: contain;
+    width: 50px;
+}
+
+.button__remove {
+    background-color: rgb(196, 28, 28);
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+}
+
+.button__remove:hover {
+    background-color: rgb(249, 59, 59);
+    transition: 0.3s;
+    transform: rotate(360deg);
+}
+
+.tasks__item--hidden {
+    display: none;
+}
+
+.small__buttons {
+    color: hsl(180, 100%, 25%);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: white;
+}
+
+.small__buttons:hover {
+    color: hsl(180, 100%, 40%);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    transition: 0.3s;
+}
+
+.disabled__button {
+    color: grey;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.disabled__button:hover {
+    color: grey;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+}
+
+.list__plane {
+    list-style-type: none;
+}

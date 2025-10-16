@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/Logo.png">
+    <title>Michał Kowalczyk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/Logo.png">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/script.js">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+            rel="stylesheet" />
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <h1>Lista zadań</h1>
+    </header>
+    <main class="list">
+        <h2 class="list__field">Dodaj nowe zadanie</h2>
+        <form class="js-form list__field">
+            <input class="js-newTask form__field" placeholder="Co jest do kupienia?">
+            <button class="button">Dodaj do listy</button>
+        </form>
+        <h3 class="list__field list__field--biggerGap js-buttons">Lista zadań</h3>
+        <li class="list__plane js-tasks"> 
+        </li>
+    </main>
+</body>
+
+</html>
