@@ -25,7 +25,39 @@
     </style>
 </head>
 
+
+
+
 <body class="container">
+    <div id="root"></div>
+    <div id="paste"></div>
+    <div id="function"></div>
+
+    <script type="text/babel">
+        const name = "Ptiche";
+        const exampleReactElement = (
+            <div>
+            <h1 className="nazwaKlasy">Hello {name.toUpperCase()}!</h1>
+            <button disabled={true}>Wyłączony przycisk</button>
+            </div>);
+
+        const element1 = <div className="klasa1">Treść</div>;
+        const element2 = <div className="klasa2">Treść2</div>;
+
+        const Hello = ({name}) => (
+            <h1>Siemanero {name}!</h1>
+        )
+
+        const element = <Hello name="Ptiche" />;
+
+        ReactDOM.render(exampleReactElement, document.getElementById(`root`));
+        ReactDOM.render(element2, document.getElementById(`paste`));
+        ReactDOM.render(element, document.getElementById(`function`));
+    </script>
+
+
+
+
     <header class="header">
         <h1>Lista zadań</h1>
     </header>
