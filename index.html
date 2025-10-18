@@ -32,6 +32,8 @@
     <div id="root"></div>
     <div id="paste"></div>
     <div id="function"></div>
+    <div id="person"></div>
+    <div id="products"></div>
 
     <script type="text/babel">
         const name = "Ptiche";
@@ -50,9 +52,44 @@
 
         const element = <Hello name="Ptiche" />;
 
+        const Ohayo = ({ name }) => {
+    return !!name && (
+        <h1>Witaj {name}!</h1>
+    )
+}
+
+        const person = (
+            <div>
+            <Ohayo name="Ptiche" />
+            <Ohayo />
+            </div>);
+        
+        const ProductList = ({products}) => (
+            <React.Fragment>
+            <h1>Lista produktów</h1>
+            <ul>
+                {products.map(({id, name}) => (
+                    <li key={id}>{name}</li>
+                ))}
+                </ul>
+                </React.Fragment>
+        )
+
+        const products = [
+            {id: 1, name: "kawa"},
+            {id: 2, name: "herbata"},
+        ]
+
+        const list = (
+            <ProductList products = {products}/>
+        );
+
         ReactDOM.render(exampleReactElement, document.getElementById(`root`));
         ReactDOM.render(element2, document.getElementById(`paste`));
         ReactDOM.render(element, document.getElementById(`function`));
+        ReactDOM.render(person, document.getElementById(`person`));
+        ReactDOM.render(list, document.getElementById(`products`));
+
     </script>
 
 

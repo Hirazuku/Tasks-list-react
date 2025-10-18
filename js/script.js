@@ -173,12 +173,6 @@
         render();
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
-        const rosol = document.querySelector(".js-rosol");
-        rosol.addEventListener("click", addRosol);
-        const ogorkowa = document.querySelector(".js-ogorkowa");
-        ogorkowa.addEventListener("click", addOgorkowa);
-        const bigos = document.querySelector(".js-bigos");
-        bigos.addEventListener("click", addBigos);
     }
 
     init();
